@@ -1,9 +1,10 @@
 """This is a fun toy example which shows how you can use the AbstractDescriptorModel to simplify usage
 of the Qt model view architecture
 """
-
-
+import sys
 import os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'lib'))
 os.environ['QT_API'] = 'pyqt5'
 os.environ['PYQTGRAPH_QT_LIB'] = 'PyQt5'
 
