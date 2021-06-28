@@ -6,12 +6,17 @@ focus is on making it easy to create a model class which:
     B) makes data read/write accessible as standard python attributes via 'dot syntax' while of course
            maintaining synchronization with any gui widgets which may be mapped
 
-The demo here sets up a graphical simulation system of 'stars' and 'planets' where the planets 'orbit' around
+There are two demos here.  simpleDemo.py displays a bunch of widgets and hooks them up to descriptor attributes in the object
+'model'  In the right hand section of the gui there is a iPython terminal where you can view and set the data attributes.  This
+is simply a demo of how the gui is synced to the attributes.
+
+The other demo is starSimulation/starSimulation.py.  This sets up a graphical simulation system of 'stars' and 'planets' 
+where the planets 'orbit' around
 the stars.  The attractive forces between the planets and stars can be adjusted and the stars themselves
 can be created and moved about.  Graphics is mainly done via pyqtgraph and the real time graphical animation
 is driven by a QTimer event.  Code organization is as follows:
 
-demo.py     -- main python (executable) script.
-models.py   -- contains data models
-widgets.py  -- contains custom widgets which are gui elements for display and interaction with the models
-gui.py      -- creates the main gui window
+starSimulation.py     -- main python (executable) script.
+models.py             -- contains data models
+widgets.py            -- contains custom widgets which are gui elements for display and interaction with the models
+gui.py                -- creates the main gui window
