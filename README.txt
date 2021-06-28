@@ -1,0 +1,17 @@
+This directory contains code which shows a simple example of how to use the AbstractDescriptorModel class.
+
+AbstractDescriptorModel is a model class for the pyqt model/view programming framework.   Its particular
+focus is on making it easy to create a model class which:
+    A) works with QDataWidgetMapper to make arbitrary two-way connections with standard QWidgets
+    B) makes data read/write accessible as standard python attributes via 'dot syntax' while of course
+           maintaining synchronization with any gui widgets which may be mapped
+
+The demo here sets up a graphical simulation system of 'stars' and 'planets' where the planets 'orbit' around
+the stars.  The attractive forces between the planets and stars can be adjusted and the stars themselves
+can be created and moved about.  Graphics is mainly done via pyqtgraph and the real time graphical animation
+is driven by a QTimer event.  Code organization is as follows:
+
+demo.py     -- main python (executable) script.
+models.py   -- contains data models
+widgets.py  -- contains custom widgets which are gui elements for display and interaction with the models
+gui.py      -- creates the main gui window
