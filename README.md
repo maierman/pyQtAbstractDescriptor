@@ -31,4 +31,6 @@ pip install --upgrade pip setuptools wheel
 pip install numpy pyside6 scipy pyqtgraph qtpy pyqt5-tools
 ```
 Run the following command to start the simulation
-`python starSimulation/starSimulation.py`
+```
+python starSimulation/starSimulation.py
+```
