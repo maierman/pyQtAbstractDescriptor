@@ -20,3 +20,12 @@ starSimulation.py     -- main python (executable) script.
 models.py             -- contains data models
 widgets.py            -- contains custom widgets which are gui elements for display and interaction with the models
 gui.py                -- creates the main gui window
+
+## Installation
+
+```
+virtualenv abstractdescriptor
+source abstractdescriptor/bin/activate
+pip install --upgrade pip setuptools wheel
+pip install numpy pyside6 scipy pyqtgraph qtpy pyqt5-tools
+```
