@@ -34,3 +34,8 @@ Run the following command to start the simulation
 ```
 python starSimulation/starSimulation.py
 ```
+
+You should see a GUI pop up that looks something like this:
+
+![image](https://user-images.githubusercontent.com/28925987/123855149-65f2a800-d8d4-11eb-930f-3376e383657e.png)
+
