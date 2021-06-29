@@ -28,7 +28,7 @@ Create a virtual environment and install necessary packages.
 virtualenv abstractdescriptor
 source abstractdescriptor/bin/activate
 pip install --upgrade pip setuptools wheel
-pip install numpy pyside6 scipy pyqtgraph qtpy pyqt5-tools
+pip install numpy pyside6 scipy pyqtgraph qtpy pyqt5-tools qtconsole
 ```
 Run the following command to start the simulation
 ```
