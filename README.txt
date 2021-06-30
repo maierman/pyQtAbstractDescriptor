@@ -6,12 +6,13 @@ focus is on making it easy to create a model class which:
     B) makes data read/write accessible as standard python attributes via 'dot syntax' while of course
            maintaining synchronization with any gui widgets which may be mapped
 
-There are two demos here.  simpleDemo.py displays a bunch of widgets and hooks them up to descriptor attributes in the object
-'model'  In the right hand section of the gui there is a iPython terminal where you can view and set the data attributes.  This
-is simply a demo of how the gui is synced to the attributes.
+There are three demos here:
 
-The other demo is starSimulation/starSimulation.py.  This sets up a graphical simulation system of 'stars' and 'planets' 
-where the planets 'orbit' around
+simpleDemo.py -- this shows how to setup basic layouts and widgets with PyQt
+interactiveDemo.py -- this is a demonstration of how to use the AbstractDescriptorModel class
+starSimulation/starSimulation.py -- a more polished example showcasing how to use AbstractDescriptorModel
+
+The starSimulation.py demo is a graphical simulation system of 'stars' and 'planets' where the planets orbit around 
 the stars.  The attractive forces between the planets and stars can be adjusted and the stars themselves
 can be created and moved about.  Graphics is mainly done via pyqtgraph and the real time graphical animation
 is driven by a QTimer event.  Code organization is as follows:
