@@ -2,7 +2,7 @@ import os
 
 os.environ['QT_API'] = 'pyqt5'
 from qtpy.QtCore import Qt
-from qtpy.QtWidgets import QWidget, QLabel, QVBoxLayout, QHBoxLayout, QSpinBox, QApplication, QPushButton
+from qtpy.QtWidgets import QWidget, QLabel, QVBoxLayout, QHBoxLayout, QSpinBox, QApplication, QPushButton, QColorDialog, QFileDialog
 
 
 # first thing's first, create the QApplication
@@ -12,13 +12,29 @@ app = QApplication([])
 spinBox = QSpinBox()
 spinBox.setValue(7)
 button = QPushButton('Bump Value')
-button2 = QPushButton('Do Nothing')
-button3 = QPushButton('Do Nothing')
+button2 = QPushButton('Pick Color')
+button3 = QPushButton('Browse')
 
-# connect a function to the button
+# connect callback functions to the buttons
 def bumpValue():
     spinBox.setValue(spinBox.value() + 1)
+
+def pickColor():
+    dialog = QColorDialog()
+    dialog.exec_()
+    color = dialog.currentColor()
+    print(f'Picked {color}') 
+
+def browseFile():
+    dialog = QFileDialog()
+    dialog.exec_()
+    files = dialog.selectedFiles()
+    print(f'Picked {files}')
+
+
 button.clicked.connect(bumpValue)   # 'button.clicked' is a 'signal' which is emitted when button is clicked
+button2.clicked.connect(pickColor)
+button3.clicked.connect(browseFile)
 
 # put the buttons together in a horizontal layout
 buttonLayout = QHBoxLayout()
