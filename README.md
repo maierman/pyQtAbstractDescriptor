@@ -8,9 +8,9 @@ focus is on making it easy to create a model class which:
 
 There are three demos here:
 
-simpleDemo.py -- this shows how to setup basic layouts and widgets with PyQt
-interactiveDemo.py -- this is a demonstration of how to use the AbstractDescriptorModel class
-starSimulation/starSimulation.py -- a more polished example showcasing how to use AbstractDescriptorModel
+- simpleDemo.py -- this shows how to setup basic layouts and widgets with PyQt
+- interactiveDemo.py -- this is a demonstration of how to use the AbstractDescriptorModel class
+- starSimulation/starSimulation.py -- a more polished example showcasing how to use AbstractDescriptorModel
 
 The starSimulation.py demo is a graphical simulation system of 'stars' and 'planets' where the planets orbit around 
 the stars.  The attractive forces between the planets and stars can be adjusted and the stars themselves
