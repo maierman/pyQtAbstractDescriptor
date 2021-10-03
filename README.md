@@ -38,7 +38,7 @@ python starSimulation/starSimulation.py
 
 You should see a GUI pop up that looks something like below. Click on "Reset Planets" to see the planets orbit around the star. You can view "RAINBOW" colored planets, "ADD STAR" and adjust it coordinates by dragging it, and "REVERSE TIME" to play the animation backwards. Adjust "HOOKE CONSTANT", "HOOKE POWER" and "NUM PLANETS" using the sliders and view the resulting change in the simulation.
 
-![image](https://user-images.githubusercontent.com/28925987/123855334-a520f900-d8d4-11eb-9658-831c9a674527.png)
+![image](https://raw.githubusercontent.com/maierman/pyQtAbstractDescriptor/master/.github/images/starSimulationImage.png)
 
 
 
